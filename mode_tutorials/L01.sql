@@ -4,10 +4,10 @@ SELECT year, month, month_name
 FROM tutorial.us_housing_units
 WHERE year<>1968 -- Not equal to: <> or !=
 
-SELECT west AS West_Region,
+SELECT west AS West_Region, -- Name columns
       south AS South_Region
   FROM tutorial.us_housing_units
-  LIMIT 10
+  LIMIT 10 -- Limit no. of rows
 
 SELECT * -- All cols
   FROM tutorial.us_housing_units
